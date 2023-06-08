@@ -1,0 +1,130 @@
+body {
+    color: white;
+    margin: 0px;
+    background-image: linear-gradient(to right, #469606, #6AF303 );
+}
+header {
+    padding: 10px;
+    background-image: linear-gradient(to right, #469606,#6AF303 );
+    border-bottom: 1px solid #fff;
+}
+ 
+h1 {
+    padding: 0px;
+}
+h5 {
+   margin-left: 15px;
+   margin-bottom: 10px;
+   margin-top: 0px;
+
+}
+#caja-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-image: linear-gradient(to right, #469606, #6AF303 );
+    margin-top: 0%;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+#mas-canchas {
+  position: absolute; /* Establecer posición absoluta para el botón */
+  bottom: 15px; /* Alinear el botón en la parte inferior */
+  right: 15px; /* Alinear el botón a la derecha */
+  width: 150px; /* Ancho deseado del botón */
+  white-space: nowrap; /* Evitar el ajuste automático de línea */
+}
+  
+footer {
+    width: 100%;
+    background-image: linear-gradient(to right, #469606,#6AF303 );
+    margin-top: 0%;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+  /* 14 */
+  .btn-14 {
+    background: #317300 ;
+    border: none;
+    z-index: 1;
+  }
+  .btn-14:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #7AFF15 ;
+    background-image: linear-gradient(315deg, #7AFF15  0%, #f6fc9c 74%);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5);
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-14:hover {
+    color: #000;
+  }
+  .btn-14:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .btn-14:active {
+    top: 2px;
+  }
+ #botonera button {
+    margin-right: 6px;
+
+ } 
+ #inicio-sesion {
+    justify-content: center;
+    white-space: nowrap;
+    max-width: 200px;
+ }
+ #caja-logo {
+    width: 220px; /* Ancho máximo del contenedor */
+    max-height: 100%; /* Altura máxima igual al tamaño de la imagen */
+    overflow: hidden; /* Ocultar el contenido que excede el tamaño del contenedor */
+  }
+  
+#caja-logo img {
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción original */
+    display: block; /* Asegurarse de que la imagen se muestre como un bloque */
+  }
+
+.boton-bottom-right {
+  position: absolute; /* Establecer posición absoluta para el botón */
+  bottom: 0; /* Alinear el botón en la parte inferior */
+  right: 0; /* Alinear el botón a la derecha */
+} 
+#subtitulo {
+  margin-left: 20px;
+  border-bottom:1px solid white;
+  font-size: 25px;
+
+}
