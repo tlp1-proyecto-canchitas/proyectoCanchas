@@ -5,7 +5,8 @@ body {
 }
 header {
     padding: 10px;
-    background-color:#15297c;
+    background-color:#107acc;
+    border-bottom: 1px solid #fff;
 }
  
 h1 {
@@ -179,7 +180,7 @@ margin-top: 0px;
   cursor: pointer;
 }
 #tarjeta:hover {
- transform: translateY(-4%);
+ transform: translatey(-4%);
 }
 h4 {
   margin-bottom: 10px;
