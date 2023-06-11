@@ -1,12 +1,11 @@
 body {
     color: white;
     margin: 0px;
-    background-image: linear-gradient(to right, #469606, #6AF303 );
+   /* background-image: linear-gradient(to right, #469606, #6AF303 );*/
 }
 header {
     padding: 10px;
-    background-image: linear-gradient(to right, #469606,#6AF303 );
-    border-bottom: 1px solid #fff;
+    background-color:#15297c;
 }
  
 h1 {
@@ -25,23 +24,30 @@ h5 {
 }
 
 main {
-    background-image: linear-gradient(to right, #469606, #6AF303 );
-    margin-top: 0%;
-    border-bottom: 1px solid #fff;
+    background-color:#15297c;
+    margin-top: 0;
+
     position: relative;
 }
 
 #mas-canchas {
-  position: absolute; /* Establecer posición absoluta para el botón */
-  bottom: 15px; /* Alinear el botón en la parte inferior */
-  right: 15px; /* Alinear el botón a la derecha */
-  width: 150px; /* Ancho deseado del botón */
-  white-space: nowrap; /* Evitar el ajuste automático de línea */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
 }
-  
+#button-mas-canchas{
+  width: 150px; /* Ancho deseado del botón */
+  height: 40px; /* Altura deseada del botón */
+  white-space: nowrap; /* Evitar el ajuste automático de línea */
+  overflow: hidden; /* Ocultar el contenido que excede las dimensiones del botón */
+  text-align: center;
+}
+
 footer {
     width: 100%;
-    background-image: linear-gradient(to right, #469606,#6AF303 );
+    background-color:#15297c;
     margin-top: 0%;
 }
 .custom-btn {
@@ -65,7 +71,7 @@ footer {
   
   /* 14 */
   .btn-14 {
-    background: #317300 ;
+    background: #142157 ;
     border: none;
     z-index: 1;
   }
@@ -78,9 +84,9 @@ footer {
     left: 0;
     z-index: -1;
     border-radius: 5px;
-    background-color: #7AFF15 ;
-    background-image: linear-gradient(315deg, #7AFF15  0%, #f6fc9c 74%);
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5);
+    background-color: #107acc ;
+    background-image: linear-gradient(315deg, #107acc  0%, #0cbccc 74%);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
     7px 7px 20px 0px rgba(0,0,0,.1),
     4px 4px 5px 0px rgba(0,0,0,.1);
     transition: all 0.3s ease;
@@ -96,6 +102,8 @@ footer {
   .btn-14:active {
     top: 2px;
   }
+
+  
  #botonera button {
     margin-right: 6px;
 
@@ -106,9 +114,9 @@ footer {
     max-width: 200px;
  }
  #caja-logo {
-    width: 220px; /* Ancho máximo del contenedor */
-    max-height: 100%; /* Altura máxima igual al tamaño de la imagen */
-    overflow: hidden; /* Ocultar el contenido que excede el tamaño del contenedor */
+    width: 220px; 
+    max-height: 100%; 
+    overflow: hidden;
   }
   
 #caja-logo img {
@@ -124,8 +132,58 @@ footer {
 } 
 #subtitulo {
   margin-left: 20px;
-  border-bottom:1px solid white;
   font-size: 25px;
 
 }
-  
+
+/*Boton despagable */
+#desplegable {
+max-width: 140px;
+max-height: 50px;
+background: #142157;
+color: #ffffff;
+box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5);
+}
+.btn-group {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 0px;
+}
+
+
+/*motor de busqueda*/
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 4px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 6px;
+  cursor: pointer;
+}
+#tarjeta:hover {
+ transform: translateY(-4%);
+}
+h4 {
+  margin-bottom: 10px;
+}
+#mapa {
+  width: 100%;
+}
