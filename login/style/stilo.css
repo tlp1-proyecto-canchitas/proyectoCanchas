@@ -8,6 +8,36 @@
 .container {
     background-color: #15297c;
 }
+.kh
+.home svg {
+    width: 35px;
+    height: 40px;
+    color:white;
+}
+.btnh {
+    background-color: #107acc;
+    color: rgb(255, 255, 255);
+    border: none;
+     padding: 10px 28px; 
+    font-size: 17px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.btnh:hover {
+    background-color: #000000  ;
+    transform: scale(1.05);
+    color: white;
+}
+
+.btnh:active {
+    background-color: #000000;
+    transform: scale(0.95);
+}
+
 
 .wrapper {
     max-width: 600px;
@@ -91,8 +121,8 @@ img {
     transition: transform 0.3s ease;
 }
 
-.wrapper .btn:hover {
-    background-color: #000000 ;
+ .wrapper .btn:hover {
+    background-color: #000000  ;
     transform: scale(1.05);
     color: white;
 }
