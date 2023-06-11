@@ -6,7 +6,7 @@
 }
 
 .container {
-    background-image: linear-gradient(to right, #469606, #6AF303);
+    background-color: #15297c;
 }
 
 .wrapper {
@@ -14,7 +14,7 @@
     min-height: 500px;
     margin: 80px auto;
     padding: 40px 30px 30px 30px;
-    background-color: #fbfbfb;
+    background-color: #107acc;
     border-radius: 15px;
     box-shadow: #0a0a0a 5px 5px, #141414 10px 10px, #1F1F1F 15px 15px, #292929 20px 20px, #333333 25px 25px;
 }
@@ -34,8 +34,6 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-
-
 
 }
 
@@ -74,40 +72,60 @@ img {
     color: #000000;
 }
 
+#boton {
+    background-color: #107acc;
+    display: flex;
+    justify-content: center;
+}
+
 .wrapper .btn {
-    box-shadow: none;
-    width: 100%;
-    height: 40px;
-    background-color: #070707;
-    color: #fff;
-    border-radius: 25px;
-    box-shadow: 3px 3px 3px #b1b1b1,
-        -3px -3px 3px #fff;
-    letter-spacing: 1.3px;
+    background-color: #15297c;
+    color: rgb(255, 255, 255);
+    border: none;
+     padding: 10px 28px; 
+    font-size: 17px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .wrapper .btn:hover {
+    background-color: #000000 ;
+    transform: scale(1.05);
+    color: white;
+}
+
+.wrapper .btn:active {
     background-color: #000000;
-    transform: scale(1.1);
-    color: #00f76b;
+    transform: scale(0.95);
 }
 
 .wrapper a {
     text-decoration: none;
     font-size: 0.8rem;
-    color: #03A9F4;
+    color: #ffffff;
+
 }
 
 .wrapper a:hover {
-    color: #3e539e;
-
-}
-
-form p {
     color: #000000;
+
 }
 
+p {
+    color: #ffffff;
+}
 
+form div {
+    background-color: white;
+}
+
+form label {
+    color: black;
+    font-size: 18px;
+}
 
 @media(max-width: 380px) {
     .wrapper {
