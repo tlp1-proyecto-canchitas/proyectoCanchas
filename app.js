@@ -1,11 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
+const path = require('path');
 
 require('dotenv').config();
 
 const { sequelize, connect } = require('./db');
-const Usuario = require('./models/usuarios');
+const Usuario = require('./models/Usuario');
 
 const app = express();
 
@@ -20,5 +21,9 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-const port = 4000
-app.listen(port, console.log(`Servidor corriendo en el puerto 4000`));
+// Configuración de motor de plantillas EJS
+app.set('view engine', 'ejs');
+
+
+const port = 3000
+app.listen(port, console.log(`Servidor corriendo en el puerto ${port}`));
