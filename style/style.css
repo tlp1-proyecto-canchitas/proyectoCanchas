@@ -188,3 +188,167 @@ h4 {
 #mapa {
   width: 100%;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background-color: #15297c;
+}
+.kh
+.home svg {
+  width: 35px;
+  height: 40px;
+  color:white;
+}
+.btnh {
+  background-color: #107acc;
+  color: rgb(255, 255, 255);
+  border: none;
+   padding: 10px 28px; 
+  font-size: 17px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.btnh:hover {
+  background-color: #000000  ;
+  transform: scale(1.05);
+  color: white;
+}
+
+.btnh:active {
+  background-color: #000000;
+  transform: scale(0.95);
+}
+
+
+.wrapper {
+  max-width: 600px;
+  min-height: 500px;
+  margin: 80px auto;
+  padding: 40px 30px 30px 30px;
+  background-color: #107acc;
+  border-radius: 15px;
+  box-shadow: #0a0a0a 5px 5px, #141414 10px 10px, #1F1F1F 15px 15px, #292929 20px 20px, #333333 25px 25px;
+}
+
+@media (max-width:748px) {
+  .wrapper {
+      margin-left: 10%;
+      margin-right: 10%;
+      box-shadow: #0a0a0a 2px 2px, #141414 5px 5px, #1F1F1F 8px 8px, #292929 10px 10px, #333333 10px 10px;
+
+  }
+}
+
+.logo {
+  object-fit: cover;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+img {
+  box-shadow: 0px 5px 0px 0px#282828 0px 5px 0px 0px#000000;
+}
+
+.wrapper .name {
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 1.3px;
+  padding-left: 10px;
+  color: #555;
+}
+
+.wrapper .form-field input {
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 10px 15px 10px 10px;
+  /* border: 1px solid red; */
+}
+
+.wrapper .form-field {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: #130000 1px 1px 6px 2px
+}
+
+.wrapper .form-field .fas {
+  color: #000000;
+}
+
+#boton {
+  background-color: #107acc;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .btn {
+  background-color: #15297c;
+  color: rgb(255, 255, 255);
+  border: none;
+   padding: 10px 28px; 
+  font-size: 17px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.wrapper .btn:hover {
+  background-color: #000000  ;
+  transform: scale(1.05);
+  color: white;
+}
+
+.wrapper .btn:active {
+  background-color: #000000;
+  transform: scale(0.95);
+}
+
+.wrapper a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #ffffff;
+
+}
+
+.wrapper a:hover {
+  color: #000000;
+
+}
+
+p {
+  color: #ffffff;
+}
+
+form div {
+  background-color: white;
+}
+
+form label {
+  color: black;
+  font-size: 18px;
+}
+
+@media(max-width: 380px) {
+  .wrapper {
+      margin: 30px 20px;
+      padding: 40px 15px 15px 15px;
+  }
+}
