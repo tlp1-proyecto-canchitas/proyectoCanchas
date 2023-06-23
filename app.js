@@ -7,14 +7,17 @@ require('dotenv').config();
 
 const { sequelize, connect } = require('./db');
 const Usuario = require('./models/Usuario');
+const router = require('./routes/usuario.routes');
 
 const app = express();
 
-connect();
+const port = process.env.PORT || 6000;
 
-app.get('/', async(req, res) => {
-    Usuario.findAll()
-})
+// connect();
+
+// app.use('/', async(req, res) => {
+//     Usuario.findAll();
+// })
 
 // Middlewares
 app.use(cors());
@@ -24,6 +27,7 @@ app.use(express.json());
 // Configuración de motor de plantillas EJS
 app.set('view engine', 'ejs');
 
+// RUTAS
+app.use('/crear-usuario', router);
 
-const port = 3000
-app.listen(port, console.log(`Servidor corriendo en el puerto ${port}`));
+app.listen(port, console.log(`Servidor corriendo en http://localhost:${port}`));

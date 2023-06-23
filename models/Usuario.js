@@ -1,10 +1,17 @@
 const { sequelize, DataTypes } = require('../db');
 
 const Usuario = sequelize.define('usuario', {
-    id_usuario: {
+    nombre: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    apellido: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    dni: {
         type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
+        allowNull: false
     },
     nombre_usuario: {
         type: DataTypes.STRING,
@@ -13,7 +20,22 @@ const Usuario = sequelize.define('usuario', {
     contraseña: {
         type: DataTypes.STRING,
         allowNull: false
-
+    },
+    telefono: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
+    fecha_nac: {
+        type: DataTypes.DATE,
+        allowNull: true
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: {
+            args: true,
+            messge: 'El email ya existe'
+        },
     },
     createdAt: {
         type: DataTypes.DATE,
@@ -35,7 +57,5 @@ const Usuario = sequelize.define('usuario', {
     deletedAt: true,
     tableName: 'usuarios'
 });
-
-// Usuario.sync();
 
 module.exports = Usuario;
