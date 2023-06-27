@@ -2,32 +2,30 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const path = require('path');
-
-require('dotenv').config();
-
-const { sequelize, connect } = require('./db');
-const Usuario = require('./models/Usuario');
-const router = require('./routes/usuario.routes');
+const dotenv = require('dotenv');
 
 const app = express();
 
-const port = process.env.PORT || 6000;
+dotenv.config();
 
-// connect();
+const miRuta = require('./src/routes/usuario.routes');
+const { sequelize, connect } = require('./db');
+const Usuario = require('./models/Usuario');
 
-// app.use('/', async(req, res) => {
-//     Usuario.findAll();
-// })
+const PORT = process.env.PORT || 3000;
 
 // Middlewares
+app.use(express.json());
 app.use(cors());
 app.use(morgan('dev'));
-app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Configuración de motor de plantillas EJS
 app.set('view engine', 'ejs');
 
 // RUTAS
-app.use('/crear-usuario', router);
+app.use('/api', miRuta);
 
-app.listen(port, console.log(`Servidor corriendo en http://localhost:${port}`));
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en http://localhost:${PORT}`)
+});

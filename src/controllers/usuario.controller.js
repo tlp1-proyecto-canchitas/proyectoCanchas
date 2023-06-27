@@ -1,6 +1,6 @@
 const usuarioCtrl = {};
 const bcrypt = require('bcrypt');
-const Usuario = require('../models/Usuario');
+const Usuario = require('../../models/Usuario');
 
 // Controlador para crear nuevo usuario
 usuarioCtrl.crearUsuario = async (req, res) => {
