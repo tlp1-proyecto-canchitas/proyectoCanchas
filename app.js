@@ -26,6 +26,8 @@ app.set('view engine', 'ejs');
 
 //Archivo estático
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
+
 
 // RUTAS
 app.use(require('./src/routes/usuario.routes'))

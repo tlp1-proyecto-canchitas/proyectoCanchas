@@ -1,24 +1,32 @@
 const router = require('express').Router();
-const usuarioCtrl = require('../controllers/usuario.controller');
+const { 
+    inicio,
+    login,
+    registro,
+    crearUsuario,
+    email,
+    telefono
+} = require('../controllers/usuario.controller')
 
-//Renderizar vistas
+
+//RUTAS PARA RENDERIZAR VISTAS
 
 //Inicio
-router.get('/', (req, res) => {
-    res.render('index');
-});
+router.get('/', inicio)
 
 //Login
-router.get('/login', (req, res) => {
-    res.render('login/Login');
-});
+router.get('/login/login', login);
 
 //Registro
-router.get('/login/registro', (req, res) => {
-    res.render('login/Registro');
-});
+router.get('/login/registro', registro);
  
-//CRUD
+//Email
+router.get('/login/email', email);
+
+//Telefono 
+router.get('/login/email/telefono', telefono)
+
+//RUTAS PARA CRUD
 
 //Lista todos los usuarios
 router.get('/usuarios', );
@@ -27,7 +35,7 @@ router.get('/usuarios', );
 router.get('/usuarios/:id', );
 
 //Crea un usuario
-router.post('/usuarios', usuarioCtrl.crearUsuario  );
+router.post('/usuarios', crearUsuario  );
 
 //Actualiza un usuario por id
 router.put('/usuarios/:id', );
