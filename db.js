@@ -1,4 +1,4 @@
-const { Sequelize, Model, DataTypes } = require('sequelize');
+const { Sequelize, DataTypes } = require('sequelize');
 
 const sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -12,15 +12,14 @@ const sequelize = new Sequelize(
     const connect = async() => {
         try {
             await sequelize.sync({force: true});
-            console.log('Base de datos conectada')
+            console.log('CONEXION A LA BASE DE DATOS EXITOSA')
         } catch (error) {
-            console.log('Error al conectar la base de datos')
+            console.log('ERROR AL INTENTAR CONECTAR LA BASE DE DATOS')
         }
     }
 
 module.exports = {
     sequelize,
     DataTypes,
-    Model,
     connect
 }

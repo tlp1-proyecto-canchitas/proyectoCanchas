@@ -58,4 +58,9 @@ const Usuario = sequelize.define('usuario', {
     tableName: 'usuarios'
 });
 
+// Crear tabla si no existe ({force: true} borra y crea la tabla)
+/*Usuario.sync({ force: false }).then(() => {
+    console.log('TABLA DE USUARIOS CREADA');
+});*/
+
 module.exports = Usuario;
